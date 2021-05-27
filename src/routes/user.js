@@ -22,7 +22,7 @@ const _user=new User({
     lastName,
     email,
     password,
-    userName: Math.random().toString()
+    userName: (Math.random()*100).toString()
 })
  
 _user.save((error,data)=>{
